@@ -526,9 +526,8 @@ body {
 }
 
 /* Sub-list of added products */
-.sub-table-header {
-    font-size: 12px;
-    font-weight: 600;
+.sub-products-list-wrapper {
+    overflow-x: auto;
     margin-top: 8px;
 }
 
@@ -730,4 +729,162 @@ body {
     background-color: #e2e8f0;
     border-color: var(--primary);
     transform: translateY(-1px);
+}
+
+/* Mobile Responsiveness media queries */
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .sidebar .side-menu {
+        display: none;
+    }
+    
+    .sidebar .user-profile {
+        border-top: none;
+        padding-top: 0;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 16px;
+    }
+    
+    .card-grid-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .checklist-tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 4px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .tab-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    
+    /* Responsive Table to Card Layout */
+    #ops-checklist-table thead {
+        display: none;
+    }
+    
+    #ops-checklist-table tbody tr[id^="row-main-"] {
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius-lg);
+        margin-bottom: 16px;
+        padding: 16px;
+        gap: 12px;
+        box-shadow: var(--shadow-sm);
+    }
+    
+    #ops-checklist-table tbody tr[id^="row-main-"] td {
+        display: block;
+        padding: 0;
+        border-bottom: none;
+        width: 100% !important;
+    }
+    
+    #ops-checklist-table tbody tr[id^="row-main-"] td.code {
+        font-size: 15px;
+        font-weight: 700;
+        border-bottom: 1px dashed var(--border-color);
+        padding-bottom: 8px;
+        margin-bottom: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #ops-checklist-table tbody tr[id^="row-main-"] td.code::after {
+        content: 'Hạng mục';
+        font-size: 10px;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    
+    /* Label prepends for card fields */
+    #ops-checklist-table tbody tr[id^="row-main-"] td:nth-child(3)::before {
+        content: 'Số lỗi: ';
+        font-weight: 600;
+        font-size: 12px;
+        color: var(--text-muted);
+    }
+    
+    #ops-checklist-table tbody tr[id^="row-main-"] td:nth-child(3) {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    #ops-checklist-table tbody tr[id^="row-main-"] td:nth-child(4)::before {
+        content: 'Bộ phận trách nhiệm:';
+        display: block;
+        font-weight: 600;
+        font-size: 11px;
+        color: var(--text-muted);
+        margin-bottom: 4px;
+    }
+    
+    #ops-checklist-table tbody tr[id^="row-main-"] td:nth-child(5)::before {
+        content: 'Ghi chú tổng hợp gửi OPS:';
+        display: block;
+        font-weight: 600;
+        font-size: 11px;
+        color: var(--text-muted);
+        margin-bottom: 4px;
+    }
+    
+    #ops-checklist-table tbody tr[id^="row-main-"] td:nth-child(6) {
+        margin-top: 8px;
+    }
+    
+    #ops-checklist-table tbody tr[id^="row-main-"] td:nth-child(6) .btn-manage {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    /* Sub-form and sub-table on mobile */
+    .sub-form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sub-form-actions {
+        margin-top: 12px;
+    }
+    
+    .scanner-dialog {
+        width: 95%;
+        margin: 10px;
+    }
+    
+    .scan-preset-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .detail-cell {
+        padding: 8px !important;
+    }
+    
+    .sub-panel-card {
+        padding: 12px;
+        border-radius: var(--border-radius-md);
+    }
 }
