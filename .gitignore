@@ -70,3 +70,6 @@ Thumbs.db
 *_files/
 product_section_raw.txt
 read_product_section.ps1
+
+# Allow tracking of mockup website HTML files
+!mockup/*.html

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup Form Đánh Giá KSTT - WinMart OPS Custom</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <div class="logo-dot"></div>
+                <h2>KSTT Central</h2>
+            </div>
+            <nav class="side-menu">
+                <a href="#" class="menu-item active">
+                    <span class="icon">📝</span>
+                    <span>Đánh Giá Mới</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <span class="icon">📊</span>
+                    <span>Báo Cáo Tổng Hợp</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <span class="icon">🏪</span>
+                    <span>Danh Sách Cửa Hàng</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <span class="icon">⚙️</span>
+                    <span>Cấu Hình</span>
+                </a>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">AT</div>
+                <div class="user-info">
+                    <p class="name">Nguyễn Anh Tuấn</p>
+                    <p class="role">Giám Sát KSTT</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-title">
+                    <h1>Biểu Mẫu Đánh Giá KSTT</h1>
+                    <p>Phiên bản nâng cấp - Tự động tổng hợp dữ liệu sản phẩm chi tiết đẩy lên OPS</p>
+                </div>
+                <div class="actions">
+                    <div class="status-badge live">OPS Connected</div>
+                </div>
+            </header>
+
+            <!-- Store Details Panel -->
+            <section class="card store-info-card">
+                <div class="card-grid-4">
+                    <div class="form-group">
+                        <label>Cửa Hàng Đánh Giá</label>
+                        <select id="store-select">
+                            <option value="5636">2014 - WM+ HNI Lạc Trung</option>
+                            <option value="1204">1002 - WM Royal City</option>
+                            <option value="3401">3045 - WM+ HNI Nguyễn Khánh Toàn</option>
+                            <option value="5518">5518 - WM+ AGG 141/5 Nguyễn Thái Học</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Giám Sát Khu Vực (RM)</label>
+                        <input type="text" id="rm-input" value="Quách Tấn An" readonly class="readonly-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Giám Đốc Vùng (AD)</label>
+                        <input type="text" id="ad-input" value="Phạm Huyền Trang" readonly class="readonly-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Đoàn/Người Đánh Giá</label>
+                        <input type="text" id="auditor-input" value="Nguyễn Anh Tuấn">
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày Thực Hiện</label>
+                        <input type="date" id="evaluation-date">
+                    </div>
+                    <div class="form-group">
+                        <label>Ca Đánh Giá</label>
+                        <select id="evaluation-shift">
+                            <option value="Ca sáng">Ca sáng</option>
+                            <option value="Ca chiều">Ca chiều</option>
+                            <option value="Ca hành chính">Ca hành chính</option>
+                            <option value="Khác">Khác</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Trạng Thái Đánh Giá</label>
+                        <select id="evaluation-status">
+                            <option value="Chưa hoàn thành">Chưa hoàn thành</option>
+                            <option value="Hoàn thành">Hoàn thành</option>
+                        </select>
+                    </div>
+                    <div class="form-group summary-metrics-container">
+                        <label>Kết Quả Tổng Hợp</label>
+                        <div class="summary-metrics">
+                            <div class="metric-badge errors">
+                                <span class="label">Lỗi:</span>
+                                <span class="val" id="summary-total-errors">0</span>
+                            </div>
+                            <div class="metric-badge penalty">
+                                <span class="label">Điểm trừ:</span>
+                                <span class="val" id="summary-total-penalty">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Checklist Form -->
+            <div class="checklist-container">
+                <!-- Checklist Navigation (Tabs) -->
+                <div class="checklist-tabs">
+                    <button class="tab-btn active" data-section="I. CLEAN">I. CLEAN</button>
+                    <button class="tab-btn" data-section="II. PRODUCT">II. PRODUCT</button>
+                    <button class="tab-btn" data-section="III. TIÊU CHUẨN DỊCH VỤ">III. DỊCH VỤ</button>
+                    <button class="tab-btn" data-section="IV. CÁC VẤN ĐỀ TUÂN THỦ KHÁC">IV. TUÂN THỦ KHÁC</button>
+                    <button class="tab-btn" data-section="V. BIÊN BẢN GHI NHẬN ĐIỂM KHÔNG PHÙ HỢP">V. BIÊN BẢN</button>
+                </div>
+
+                <div class="card checklist-card" style="margin-top: 16px;">
+                    <h3 id="current-section-title">I. CLEAN - Vệ Sinh và Trưng bày</h3>
+                    <p class="section-desc" id="current-section-desc">Hạng mục kiểm tra tổng quát khu vực bên ngoài và bên trong cửa hàng.</p>
+                    
+                    <div class="checklist-table-wrapper">
+                        <table class="checklist-table" id="ops-checklist-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 70px;">Mã</th>
+                                    <th style="width: 320px;">Hạng mục kiểm tra</th>
+                                    <th style="width: 95px; text-align: center;">Số lỗi</th>
+                                    <th style="width: 140px;">Nhóm lỗi</th>
+                                    <th style="width: 150px;">Bộ phận trách nhiệm</th>
+                                    <th style="width: 250px;">Ghi chú chi tiết</th>
+                                    <th style="width: 130px; text-align: center;">Minh chứng (Ảnh)</th>
+                                    <th style="width: 130px; text-align: center;">Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody id="checklist-rows">
+                                <!-- Dynamic rows will be rendered here by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sync Payload & Live Preview Panel -->
+            <section class="card payload-card">
+                <div class="card-header-flex">
+                    <div>
+                        <h3>Đồng Bộ Dữ Liệu Sang WinMart OPS</h3>
+                        <p class="section-desc">Mô phỏng dữ liệu JSON được kết xuất để gửi các request tuần tự lên các API của OPS.</p>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn btn-secondary" id="btn-export-csv" style="background-color: #10b981; border: none;">📥 Tải Excel điền OPS</button>
+                        <button class="btn btn-danger" id="btn-sync-ops">⚡ Đẩy Dữ Liệu Lên OPS</button>
+                    </div>
+                </div>
+                <div class="code-preview-wrapper">
+                    <pre><code id="json-preview">{}</code></pre>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Barcode Scanner Simulator Modal -->
+    <div class="modal-backdrop hidden" id="scanner-modal">
+        <div class="modal-dialog scanner-dialog">
+            <div class="modal-header">
+                <h3>Trình Giả Lập Quét Barcode</h3>
+                <button class="close-modal" id="btn-close-scanner">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="scanner-camera-feed">
+                    <div class="scanner-laser"></div>
+                    <div class="scanner-target-box"></div>
+                    <!-- Mock video or image representing active camera -->
+                    <div class="scanner-video-mock">
+                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=500&auto=format&fit=crop&q=60" alt="Camera Feed" id="scanner-img">
+                    </div>
+                </div>
+                <div class="scanner-controls">
+                    <p class="help-text">Chọn một sản phẩm mẫu bên dưới để giả lập hành động quét thành công bằng Camera điện thoại/máy tính:</p>
+                    <div class="scan-preset-grid">
+                        <button class="preset-btn" data-code="8936079010025" data-name="Sữa tươi TH True Milk ít đường 1L">
+                            🥛 Sữa TH True Milk
+                        </button>
+                        <button class="preset-btn" data-code="8934563138012" data-name="Mì Hảo Hảo Tôm Chua Cay 75g">
+                            🍜 Mì Hảo Hảo
+                        </button>
+                        <button class="preset-btn" data-code="2901234500150" data-name="Táo Rockit New Zealand 4 quả">
+                            🍎 Táo Rockit
+                        </button>
+                        <button class="preset-btn" data-code="8935049500412" data-name="Bánh Solite Lá Dứa hộp 360g">
+                            🍰 Bánh Solite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Web App JS File -->
+    <script src="app.js"></script>
+</body>
+</html>
