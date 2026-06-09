@@ -68,3 +68,5 @@ Thumbs.db
 *.html
 *.log
 *_files/
+product_section_raw.txt
+read_product_section.ps1
