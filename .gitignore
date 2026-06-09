@@ -62,3 +62,9 @@ jspm_packages/
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# Temporary files generated during analysis
+*.har
+*.html
+*.log
+*_files/
