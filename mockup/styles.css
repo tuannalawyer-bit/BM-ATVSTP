@@ -6,23 +6,22 @@
     --secondary: #4f46e5;
     --secondary-hover: #4338ca;
     
-    --bg-app: #f3f4f6;
+    --bg-app: #f8fafc;
     --bg-sidebar: #0f172a;
-    --bg-card: rgba(255, 255, 255, 0.85);
+    --bg-card: #ffffff;
     
-    --text-main: #1f2937;
-    --text-muted: #4b5563;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
     --text-white: #ffffff;
     
-    --border-color: rgba(209, 213, 219, 0.4);
+    --border-color: #e2e8f0;
     --border-radius-lg: 16px;
     --border-radius-md: 10px;
     --border-radius-sm: 6px;
     
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
-    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04);
-    --glass-blur: blur(12px) saturate(180%);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -183,12 +182,10 @@ body {
 /* Cards & Layout panels */
 .card {
     background: var(--bg-card);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius-lg);
     padding: 24px;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
 }
 
 .card h3 {
@@ -229,28 +226,31 @@ body {
     grid-column: span 2;
 }
 
-.form-group.col-4 {
-    grid-column: span 4;
+.form-group.col-3 {
+    grid-column: span 3;
 }
 
 .form-group label {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .form-group input, .form-group select {
-    padding: 10px 14px;
+    padding: 8px 12px;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius-md);
     background: #ffffff;
     font-size: 13px;
-    transition: border-color 0.2s;
+    transition: all 0.2s;
 }
 
 .form-group input:focus, .form-group select:focus {
     border-color: var(--primary);
     outline: none;
+    box-shadow: 0 0 0 3px rgba(224, 27, 34, 0.15);
 }
 
 .input-with-button {
@@ -264,7 +264,7 @@ body {
 
 /* Buttons */
 .btn {
-    padding: 10px 18px;
+    padding: 8px 16px;
     border-radius: var(--border-radius-md);
     font-size: 13px;
     font-weight: 600;
@@ -273,6 +273,7 @@ body {
     transition: all 0.2s;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
 }
 
@@ -366,13 +367,13 @@ body {
 }
 
 .checklist-table th, .checklist-table td {
-    padding: 12px 16px;
+    padding: 14px 16px;
     border-bottom: 1px solid var(--border-color);
     vertical-align: middle;
 }
 
 .checklist-table th {
-    background-color: rgba(0,0,0,0.02);
+    background-color: #f8fafc;
     color: var(--text-muted);
     font-weight: 600;
     font-size: 11px;
@@ -391,49 +392,86 @@ body {
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius-sm);
     font-size: 12px;
+    background: #ffffff;
 }
 
-/* Defective Product Form Expandable Panel */
-.product-form-panel {
-    background-color: rgba(0,0,0,0.02);
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius-md);
-    padding: 20px;
-    margin-bottom: 24px;
+.table-input:focus {
+    border-color: var(--primary);
+    outline: none;
 }
 
-.product-form-panel.hidden {
-    display: none;
-}
-
-.product-form-panel h4 {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 16px;
+.error-badge-ops {
+    background-color: var(--primary-light);
     color: var(--primary);
+    font-weight: 700;
+    font-size: 13px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(224, 27, 34, 0.2);
+    display: inline-block;
 }
 
-.form-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.aggregated-note-box {
+    font-size: 11px;
+    color: var(--text-muted);
+    background-color: #f8fafc;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    white-space: pre-wrap;
+    max-height: 80px;
+    overflow-y: auto;
+}
+
+/* Detailed expanded subrow styles */
+.detail-row {
+    background-color: #f8fafc;
+}
+
+.detail-cell {
+    padding: 20px !important;
+    border-bottom: 2px solid var(--primary) !important;
+}
+
+.sub-panel-card {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: var(--border-radius-lg);
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
-.form-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
-    margin-top: 8px;
+.sub-panel-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--primary);
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 8px;
 }
 
-/* Image Uploader & Preview styles */
+.sub-form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.sub-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* Image Uploader & Preview styles inside subrow */
 .image-upload-wrapper {
     position: relative;
-    height: 90px;
+    height: 72px;
 }
 
 .image-upload-box {
-    border: 2px dashed var(--border-color);
+    border: 1px dashed var(--border-color);
     border-radius: var(--border-radius-md);
     height: 100%;
     display: flex;
@@ -441,22 +479,22 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: #ffffff;
-    transition: background-color 0.2s;
+    background-color: #f8fafc;
+    transition: all 0.2s;
 }
 
 .image-upload-box:hover {
-    background-color: rgba(0,0,0,0.02);
+    background-color: #ffffff;
     border-color: var(--primary);
 }
 
 .image-upload-box p {
-    font-size: 11px;
+    font-size: 10px;
     color: var(--text-muted);
 }
 
 .image-upload-box .icon {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .image-preview {
@@ -475,53 +513,47 @@ body {
 
 .btn-remove-img {
     position: absolute;
-    top: 4px;
-    right: 4px;
+    top: 2px;
+    right: 2px;
     background-color: rgba(0,0,0,0.6);
     color: white;
     border: none;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     cursor: pointer;
+    font-size: 9px;
+}
+
+/* Sub-list of added products */
+.sub-table-header {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.sub-products-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    background-color: #ffffff;
+}
+
+.sub-products-table th, .sub-products-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.sub-products-table th {
+    font-weight: 600;
+    background-color: #f1f5f9;
+    color: var(--text-muted);
     font-size: 10px;
 }
 
-/* Defective list styles */
-.defective-list-section {
-    margin-top: 24px;
-}
-
-.list-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-}
-
-.list-header h4 {
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.badge {
-    background-color: var(--primary);
-    color: white;
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 11px;
-    font-weight: 600;
-}
-
-.empty-row td {
-    text-align: center;
-    color: var(--text-muted);
-    padding: 30px;
-}
-
 .product-thumb {
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
     border-radius: var(--border-radius-sm);
     object-fit: cover;
     border: 1px solid var(--border-color);
@@ -529,11 +561,11 @@ body {
 
 /* Payload Preview pre styles */
 .code-preview-wrapper {
-    background-color: #1e293b;
+    background-color: #0f172a;
     border-radius: var(--border-radius-md);
     padding: 16px;
     overflow-x: auto;
-    max-height: 280px;
+    max-height: 300px;
 }
 
 .code-preview-wrapper pre {
@@ -553,13 +585,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(15, 23, 42, 0.4);
     backdrop-filter: blur(4px);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100000;
-    transition: all 0.3s;
 }
 
 .modal-backdrop.hidden {
@@ -571,9 +602,9 @@ body {
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-lg);
     overflow: hidden;
-    width: 460px;
+    width: 480px;
     max-width: 90%;
-    animation: modalSlideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: modalSlideIn 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes modalSlideIn {
