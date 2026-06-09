@@ -1,0 +1,303 @@
+﻿[
+    {
+        "num":  "1",
+        "code":  "ERR",
+        "group":  "C1.KV bên ngoài",
+        "desc":  "C1.1 Vỉa hè sạch sẽ, không có rác, không có vật dụng cản trở...",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "2",
+        "code":  "ERR",
+        "group":  "C1.KV bên ngoài",
+        "desc":  "C1.2 Cửa kính/ cột Alu sạch sẽ, không dính tem niêm phong, không treo các vật dụng.",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "3",
+        "code":  "ERR",
+        "group":  "C1.KV bên ngoài",
+        "desc":  "C1.3 Hình ảnh MKT đầy đủ, sạch sẽ, không rách/ bong tróc, còn hiệu lực áp dụng",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "4",
+        "code":  "ERR",
+        "group":  "C2.Khu vực thu ngân",
+        "desc":  "C2.1 Kệ bày hàng trước và sau quầy thu ngân/ trên mặt quầy và trong quầy thu ngân: Gọn gàng, sạch sẽ, trang thiết bị không bám bụi, không dán tem niêm phong/tem giá lên các dụng cụ, quầy thu ngân, bảng tin;",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "5",
+        "code":  "ERR",
+        "group":  "C2.Khu vực thu ngân",
+        "desc":  "C2.2 Thùng rác: sạch sẽ, có nắp đậy, lót túi nilong bên trong. (áp dụng cho thùng rác chứa rác thực phẩm)",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "6",
+        "code":  "ERR",
+        "group":  "C2.Khu vực thu ngân",
+        "desc":  "C2.3 Bàn sơ chế/ CCDC (dao, kéo, thớt,..): Sạch sẽ, Các CCDC nguyên vẹn, làm bằng vật liệu phù hợp, không bị rỉ sét, ố vàng.",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "7",
+        "code":  "ERR",
+        "group":  "C3.Không gian chung bên trong CH",
+        "desc":  "C3.1 Không gian: không có mùi ẩm mốc/mùi hôi/mùi lạ",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "8",
+        "code":  "ERR",
+        "group":  "C3.Không gian chung bên trong CH",
+        "desc":  "C3.2 Sàn nhà/lối đi: thông thoáng, sạch sẽ",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "9",
+        "code":  "ERR",
+        "group":  "C3.Không gian chung bên trong CH",
+        "desc":  "C3.3 Tường/trần: sạch sẽ, không mạng nhện, không ẩm mốc, bong tróc",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "10",
+        "code":  "ERR",
+        "group":  "C3.Không gian chung bên trong CH",
+        "desc":  "C3.4 Giỏ đựng hàng: đảm bảo sạch sẽ, nguyên vẹn.",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "11",
+        "code":  "ERR",
+        "group":  "C3.Không gian chung bên trong CH",
+        "desc":  "C3.5  Mâm kệ, hệ tủ: sạch, không bụi bẩn và vết băng keo",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "12",
+        "code":  "ERR",
+        "group":  "C3.Không gian chung bên trong CH",
+        "desc":  "C3.6 sản phẩm không bụi bẩn.",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "13",
+        "code":  "ERR",
+        "group":  "C3.Không gian chung bên trong CH",
+        "desc":  "C3.7 Kiểm soát côn trùng và động vật gây hại: Không có động vật gây hại sống/ chết trong cửa hàng; Không có côn trùng gây hại sống trong cửa hàng; Có đèn diệt côn trùng, đèn hoạt động tốt.",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "14",
+        "code":  "ERR",
+        "group":  "C4.Khu vực Kho và Nhà vệ sinh",
+        "desc":  "C4.1  Kho: không có mùi hôi, sàn kho vệ sinh sạch sẽ, không có rác, hàng hóa sắp xếp gọn gàng.",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "15",
+        "code":  "ERR",
+        "group":  "C4.Khu vực Kho và Nhà vệ sinh",
+        "desc":  "C4.2 Kệ kho: không bám bụi …",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "16",
+        "code":  "ERR",
+        "group":  "C4.Khu vực Kho và Nhà vệ sinh",
+        "desc":  "C4.3 Nhà vệ sinh: luôn đóng cửa, sạch sẽ, gọn gàng, không có mùi hôi, nước và các trang thiết bị hoạt động bình thường;Có đầy đủ: nước sạch, dung dịch rửa tay/ xà phòng",
+        "section":  "I. CLEAN"
+    },
+    {
+        "num":  "17",
+        "code":  "ERR",
+        "group":  "P1.Kiểm soát chất lượng sản phẩm",
+        "desc":  "P1.1 Chất lượng sản phẩm: Không có sản phẩm bị mốc, thối (*). (Điền số SKU lỗi)",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "18",
+        "code":  "ERR",
+        "group":  "P1.Kiểm soát chất lượng sản phẩm",
+        "desc":  "P1.2 Chất lượng sản phẩm:Không có sản phẩm kém chất lượng khác tại khu vực bày bán.(Điền số SKU lỗi)",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "19",
+        "code":  "ERR",
+        "group":  "P1.Kiểm soát chất lượng sản phẩm",
+        "desc":  "P1.3 Hạn sử dụng: Không có hàng hết HSD/ kéo dài HSD tại khu vực trưng bày bán (*) (Điền số SKU lỗi)",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "20",
+        "code":  "ERR",
+        "group":  "P1.Kiểm soát chất lượng sản phẩm",
+        "desc":  "P1.4 Nhãn mác: đủ thông tin, không mờ nhòe, nội dung phải đồng nhất (Điền số SKU lỗi)",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "21",
+        "code":  "ERR",
+        "group":  "P1.Kiểm soát chất lượng sản phẩm",
+        "desc":  "P1.5 Bao bì: Nguyên vẹn, không hở/móp méo (Điền số SKU lỗi)",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "22",
+        "code":  "ERR",
+        "group":  "P1.Kiểm soát chất lượng sản phẩm",
+        "desc":  "P1.6 Tuân thủ rút hàng khỏi quầy: đúng thời hạn quy định.(Điền số SKU lỗi)",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "23",
+        "code":  "ERR",
+        "group":  "P2. Kiểm soát hàng hóa khu vực bán hàng",
+        "desc":  "P2.1 Hàng hóa trưng bày đảm bảo nguyên tắc FIFO, FEFO",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "24",
+        "code":  "ERR",
+        "group":  "P2. Kiểm soát hàng hóa khu vực bán hàng",
+        "desc":  "P2.2 Đảm bảo nguyên tắc tránh nhiễm chéo (TP và PTP …)",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "25",
+        "code":  "ERR",
+        "group":  "P2. Kiểm soát hàng hóa khu vực bán hàng",
+        "desc":  "P2.3 Không để hàng hóa trực tiếp dưới sàn (áp dụng cho hàng thực phẩm)",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "26",
+        "code":  "ERR",
+        "group":  "P2. Kiểm soát hàng hóa khu vực bán hàng",
+        "desc":  "P2.4 Bảo quản SP theo đúng điều kiện trên nhãn hoặc điều kiện bảo quản với từng loại sản phẩm.",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "27",
+        "code":  "ERR",
+        "group":  "P2. Kiểm soát hàng hóa khu vực bán hàng",
+        "desc":  "P2.5 Hàng chờ xử lý: để tách biệt, có biển cảnh báo Hàng chờ xử lý và phải được liệt kê đầy đủ trong danh sách CXL",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "28",
+        "code":  "ERR",
+        "group":  "P2. Kiểm soát hàng hóa khu vực bán hàng",
+        "desc":  "P2.6 Tuân thủ kiểm soát nhiệt độ tủ bảo quản theo quy định",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "29",
+        "code":  "ERR",
+        "group":  "P3.Kiểm soát hàng hóa khu vực Kho",
+        "desc":  "P3.1 Trong kho vỏ thùng carton phải được sắp xếp gọn gàng.",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "30",
+        "code":  "ERR",
+        "group":  "P3.Kiểm soát hàng hóa khu vực Kho",
+        "desc":  "P3.2 Khu vực hàng chờ xử lý có biển cảnh báo Hàng chờ xử lý và có danh sách liệt kê đầy đủ các sản phẩm bảo quản tại khu vực hàng CXL.",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "31",
+        "code":  "ERR",
+        "group":  "P3.Kiểm soát hàng hóa khu vực Kho",
+        "desc":  "P3.3 Sắp xếp hàng hóa trong kho: Tuân thủ trưng bày theo layout đã được hướng dẫn.",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "32",
+        "code":  "ERR",
+        "group":  "P3.Kiểm soát hàng hóa khu vực Kho",
+        "desc":  "P3.4 Sắp xếp hàng hóa trong kho: Lưu trữ đảm bảo nguyên tắc FIFO, FEFO",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "33",
+        "code":  "ERR",
+        "group":  "P3.Kiểm soát hàng hóa khu vực Kho",
+        "desc":  "P3.5 Sắp xếp hàng hóa trong kho: Lưu trữ đảm bảo tránh nhiễm chéo (TP sống/TP chín, TP/ PTP …)",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "34",
+        "code":  "ERR",
+        "group":  "P3.Kiểm soát hàng hóa khu vực Kho",
+        "desc":  "P3.5 Sắp xếp hàng hóa trong kho: Không để hàng hóa TP trực tiếp dưới sàn",
+        "section":  "II. PRODUCT"
+    },
+    {
+        "num":  "35",
+        "code":  "ERR",
+        "group":  "H1.Cười - Chào - Cảm ơn",
+        "desc":  "H1.1 Cười chào niềm nở, vui vẻ, thân thiện khi Khách đến và Khách đi (Chào khách: ngay khi Khách hàng bước mở cửa và bước vào cửa hàng; Cảm ơn và hẹn gặp lại khách hàng: ngay khi Khách hàng thanh toán xong và đưa hóa đơn cho khách) (Điền số lượng CBNV vi phạm)",
+        "section":  "III. TIÊU CHUẨN DỊCH VỤ"
+    },
+    {
+        "num":  "36",
+        "code":  "ERR",
+        "group":  "H2.Tác phong diện mạo",
+        "desc":  "H2.1 Tác phong diện mạo chuẩn chỉnh theo quy định: Đồng phục, diện mạo; Đưa hóa đơn và tiền cho khách hàng bằng hai tay. (Điền số lượng CBNV vi phạm)",
+        "section":  "III. TIÊU CHUẨN DỊCH VỤ"
+    },
+    {
+        "num":  "37",
+        "code":  "ERR",
+        "group":  "H3.Trưng bày hàng hóa",
+        "desc":  "H3.1 Tem giá/ tem khuyến mại đầy đủ, để đúng vị trí, đúng thông tin với sản phẩm (Điền số lượng tem giá sai/thiếu)",
+        "section":  "III. TIÊU CHUẨN DỊCH VỤ"
+    },
+    {
+        "num":  "38",
+        "code":  "ERR",
+        "group":  "H3.Trưng bày hàng hóa",
+        "desc":  "H3.2 Trưng bày: Không để hàng hóa trống kệ.",
+        "section":  "III. TIÊU CHUẨN DỊCH VỤ"
+    },
+    {
+        "num":  "39",
+        "code":  "ERR",
+        "group":  "Nhận diện",
+        "desc":  "- Bảng biển: biển hiệu của CH có đủ thông tin về cơ quan chủ quản trực tiếp (Tên Chi nhánh của WinCommerce) hay không?\n\t\t\t- Có thông báo không bán rượu, bia, thuốc lá cho người dưới 18 tuổi tại nơi bày bán rượu/ bia/ thuốc lá;\n\t\t\tLưu ý: Không được quảng cáo bán rượu/thuốc lá/sữa bột (thường tại khu vực bày thuốc lá vẫn có Poster và hình bao thuốc lá quảng cáo).",
+        "section":  "IV. CÁC VẤN ĐỀ TUÂN THỦ KHÁC"
+    },
+    {
+        "num":  "40",
+        "code":  "ERR",
+        "group":  "Hồ sơ",
+        "desc":  "Lưu trữ hồ sơ/ giấy tờ pháp lý tại CSVH (in bản cứng lưu tại CH) tối thiểu 5 loại giấy tờ sau:\n\t\t\t- Giấy chứng nhận Đăng ký kinh doanh;\n\t\t\t- Giấy chứng nhận Cơ sở đủ điều kiện An toàn thực phẩm;\n\t\t\t- Giấy phép kinh doanh rượu;\n\t\t\t- Giấy phép kinh doanh thuốc lá;\n\t\t\t- Quyết định ủy quyền cho CHT…tiếp đoàn thanh, kiểm tra",
+        "section":  "IV. CÁC VẤN ĐỀ TUÂN THỦ KHÁC"
+    },
+    {
+        "num":  "41",
+        "code":  "ERR",
+        "group":  "Kiểm định thiết bị",
+        "desc":  "Cân điện tử được kiểm định đầy đủ và còn hiệu lực (1 năm/lần)",
+        "section":  "IV. CÁC VẤN ĐỀ TUÂN THỦ KHÁC"
+    },
+    {
+        "num":  "42",
+        "code":  "ERR",
+        "group":  "PCCC",
+        "desc":  "Kiểm tra công tác PCCC/ PCCN tại CH:\n\t\t\t1. Nội quy an toàn \u0026amp; Tiêu lệnh PCCC, biển cấm, biển báo, biển chỉ dẫn về PCCC phải được phổ biến và niêm yết ở những nơi dễ thấy để mọi người biết và chấp hành\n\t\t\t2. Bình PCCC đạt tiêu chuẩn:\n\t\t\t+ Không bị che khuất,\n\t\t\t+ Sạch sẽ,\n\t\t\t+ Có phiếu checklist kiểm tra tình trạng hoạt động (tối thiểu 1 lần/tháng),\n\t\t\t+ Còn nguyên kẹp chì,\n\t\t\t+ Bình khí đạt áp suất/ bình bột đạt trọng lượng,\n\t\t\t+ Vòi phun: không bị nứt, hỏng...\n\t\t\t+ Bình PCCC bị hư hỏng phải có cảnh báo để riêng khu vực.\n\t\t\t3. Không để hàng hóa, bìa catton, rác, vật dụng ...gần khu vực tủ mạng/tủ điện/ổ điện...\n\t\t\t4. Không đun nấu trong CH (Chỉ sử dụng trang thiết bị nhiệt/điện do Cty cấp và sử dụng đúng công năng)",
+        "section":  "IV. CÁC VẤN ĐỀ TUÂN THỦ KHÁC"
+    },
+    {
+        "num":  "43",
+        "code":  "ERR",
+        "group":  "Biên bản",
+        "desc":  "Biên bản",
+        "section":  "V. BIÊN BẢN GHI NHẬN ĐIỂM KHÔNG PHÙ HỢP"
+    }
+]
